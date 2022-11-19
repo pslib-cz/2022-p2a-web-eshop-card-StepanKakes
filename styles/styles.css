@@ -59,13 +59,17 @@ body{
     margin-top:  20px;
 }
 
+.card-header{
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
 .card-header h2{
     margin: 0;
 }
 
 .card-header h1{
-    margin-top: 40px;
-    margin-bottom: 5px;
+    margin: 0;
     width: fit-content;
     background-image: linear-gradient(#369ac0, #369ac0);
     background-size: 0 2px, auto;
@@ -100,7 +104,7 @@ body{
 
 .card-image__img{
     height: 243px;
-    width: 154px;
+    width: auto;
     transition: transform .2s;
 }
 
@@ -116,62 +120,47 @@ body{
     gap: 5px ;
 }
 
-.card-phone-color__purple{
+.model-type{
     width: 1rem;
     height: 1rem;
     border-radius: 50%;
+    border:1px solid rgba(0, 0, 0, 0.2);
+}
+
+.model-type--purple{
+    width: 1rem;
+    height: 1rem;
     background: rgb(153, 51, 255);
-    border:1px solid rgba(0, 0, 0, 0.2);
 }
 
-.card-phone-color__yellow{
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
+.model-type--plus{
+   text-decoration: none;
+}
+
+.model-type--yellow{
     background: rgb(255, 215, 0);
-    border:1px solid rgba(0, 0, 0, 0.2);
 }
-.card-phone-color__gray{
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
+.model-type--gray{
     background: rgb(128, 128, 128);
-    border:1px solid rgba(0, 0, 0, 0.2);
 }
 
-.card-phone-color__red{
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
+.model-type--red{
     background: rgb(255, 0, 0);
-    border:1px solid rgba(0, 0, 0, 0.2);
 }
 
-.card-phone-color__blue{
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
+.model-type--blue{
     background: rgb(0, 0, 255);
-    border:1px solid rgba(0, 0, 0, 0.2);
 }
 
-.card-phone-color__white{
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
+.model-type--white{
     background: white;
-    border:1px solid rgba(0, 0, 0, 0.2);
 }
 
-.card-phone-color__pink{
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
+.model-type--pink{
     background: rgb(253, 228, 221);
-    border:1px solid rgba(0, 0, 0, 0.2);
 }
 
-.card .card-badge{
+.card .card__badge{
     color: white;
     font-weight: 800;
     font-size: 12px !important;
@@ -181,7 +170,7 @@ body{
     position: absolute;
     align-self: end;
 }
-.card-badge{
+.card__badge{
     margin: 0 0 2px auto;
     background-color: #4CA5AA;
     padding: 8px;
@@ -208,13 +197,13 @@ body{
     cursor: pointer;
 }
 
-.card-price-line{
+.card-price__line{
     position: relative;
     width: fit-content;
     height: 1.25rem;
 }
 
-.card-price-line__swg{
+.card-price__line__swg{
     position: absolute;
     height: 10px;
     width: 100%;
@@ -223,7 +212,7 @@ body{
     bottom: 0px;
     margin: auto;
 }
-.card-price-line__swg line{
+.card-price__line__swg line{
    stroke: rgb(226, 0, 116);
    stroke-width: 2.5;
 }
